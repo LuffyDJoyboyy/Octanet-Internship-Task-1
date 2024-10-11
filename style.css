@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Inter", system-ui;
+}
+:root{
+    --iconColor:#bcf2f658;
+    --oneMoreColor:#0588CA;
+    --moreColor:#0930F9;
+}
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.up {
+    height: 85vh;
+    width: 100%;
+    background-image: url(/Images/christopher-gower-m_HRfLhgABo-unsplash.jpg);
+    background-size: cover;
+    margin-bottom: 25px;
+}
+
+.horizontal-navbar {
+    width: 100%;
+    height: 14vh;
+    background-color: #09a8f9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    position: sticky;
+    z-index: 99;
+}
+
+.horizontal-navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.horizontal-navbar p {
+    font-size: 45px;
+    font-weight: bold;
+    margin-left: 35px;
+}
+
+.horizontal-navbar ul li {
+    padding: 5px 20px;
+}
+
+.horizontal-navbar ul li:hover{
+    background-color: var(--iconColor);
+    border: 2px #09F9D2 solid;
+}
+
+.horizontal-navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 23px;
+}
+
+.menu {
+    display: none;
+}
+
+.vertical-navbar {
+    background-color: #09a9f91b;
+    position: fixed;
+    width: 120px;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 40vw;
+    z-index: 999;
+    display: none;
+    justify-content: center;
+    align-items: flex-start;
+    backdrop-filter: blur(10px);
+
+}
+
+.vertical-navbar ul {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+
+.vertical-navbar li {
+    list-style: none;
+    width: 100%;
+    text-align: center;
+}
+
+.vertical-navbar ul li a {
+    text-decoration: none;
+    /* color: rgb(37, 117, 236); */
+    color:white;
+    font-size: 20px;
+}
+
+.close {
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+}
+
+.main {
+    height: 71vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.overlay{
+    background-color: rgba(128, 128, 128, 0.47);
+    
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 42px;
+    position: relative;
+    z-index: 99;
+}
+
+.content h1 {
+    color: #09a8f9;
+}
+
+.content p {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+.button-div{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.button {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 2px;
+    font-size: 18px;
+    margin: 3px;
+    cursor: pointer;
+}
+
+.button1 {
+    background-color: #09a8f9;
+    color: white;
+}
+
+
+.button2 {
+    background-color: white;
+    color: #09a8f9;
+}
+
+.button:hover{
+    padding: 18px 36px;
+    font-size: 20px;
+}
+
+.down {
+    width: 100%;
+    height: 85vh;
+}
+
+.featText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 25vh;
+    width: 50vw;
+    text-align: center
+}
+
+.featText h1{
+    position: relative;
+    left: 50%;
+    font-size: 40px;
+}
+.featText p{
+    font-size: 25px;
+    width: 100vw;
+}
+
+.features {
+    margin-top: 25px;
+    height: 40vh;
+    width: 100%;
+    display: flex; 
+}
+
+.feat {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-wrap: break-word;
+    text-align: center;
+    gap: 15px;
+    width:25%;
+}
+
+.icon {
+    height: 80px;
+    width: 80px;
+    background-color: #09a8f9;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon i {
+    color: white;
+    size: 10px;
+}
+
+.feat h4 {
+    margin-top: 15px;
+    font-size: 30px;
+}
+.feat p{
+    font-size: 25px;
+}
+
+@media screen and (max-width:945px) {
+    .horizontal-navbar ul li{
+        display: none;
+    }
+    .horizontal-navbar ul .menu{
+        display: flex;
+    }
+    
+}
+
+@media screen and (max-width:360px) {
+    .button-div{
+        display: flex;
+        flex-direction: column;
+    }
+    .down{
+        margin-top: 80px;
+    }
+}
+
+@media screen and (max-width:670px) {
+    .features{
+        display: flex;
+        flex-direction: column;
+        gap:10px;
+    }
+
+    .feat{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .icon{
+        width: 80px;
+        height: 80px;
+    }
+}
+
+/* @media screen and (min-width:1370px) {
+
+    .horizontal-navbar ul li a {
+        font-size: 30px;
+    }
+
+    .horizontal-navbar p{
+        font-size: 55px;
+    }
+    .content h1{
+        font-size: 65px;
+    }
+    .content p{
+        font-size: 40px;
+    }
+
+    .button {
+        padding: 33px 86px;
+        font-size: 33px;
+    }
+    .featText h1{
+        font-size:60px;
+    }
+    .featText p{
+        font-size: 40px;
+    }      
+    .icon {
+        height: 180px;
+        width: 180px;
+    }
+    .icon svg{
+        height: 50px;
+        width:50px
+    }
+
+    .feat h4{
+        font-size: 35px;
+    }
+    .feat p{
+        font-size: 28px;
+    }   
+} */
+
