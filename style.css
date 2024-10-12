@@ -7,8 +7,8 @@
 }
 :root{
     --iconColor:#bcf2f658;
-    --oneMoreColor:#0588CA;
-    --moreColor:#0930F9;
+    --compColor1:#0588CA;
+    --compColor:#0930F9;
 }
 body {
     width: 100%;
@@ -170,8 +170,7 @@ body {
 }
 
 .button:hover{
-    padding: 18px 36px;
-    font-size: 20px;
+   transform: scale(1.2);
 }
 
 .down {
