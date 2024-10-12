@@ -154,7 +154,7 @@ body {
     border: none;
     border-radius: 2px;
     font-size: 18px;
-    margin: 3px;
+    margin: 8px;
     cursor: pointer;
 }
 
@@ -171,6 +171,23 @@ body {
 
 .button:hover{
    transform: scale(1.2);
+    animation: buttonAnime 2s ease-out 0s 1 ;
+}
+
+@keyframes buttonAnime {
+    0%{
+        border-left: #09F9D2 4px solid;
+    }
+    25%{
+        border-top: #09F9D2 4px solid;
+    }
+    50%
+    {
+        border-right: #09F9D2 4px solid;
+    }
+    75%{
+        border-bottom: #09F9D2 4px solid;
+    }
 }
 
 .down {
